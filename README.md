@@ -42,7 +42,7 @@ MoESubtyping/
 
 Each CSV needs the 96 named feature columns listed in [`features.txt`](features.txt). That file defines the model's feature order; CSV column order can differ because the loader selects features by name. Extra metadata columns are ignored. Column names must be unique, and features must be numeric, finite, and complete. Perform any required quality control or imputation before training.
 
-Features comprise 68 Desikan-Killiany cortical thickness measurements (34 per hemisphere) and 28 Aseg subcortical volumes. Following the original preprocessing notebook, divide each subcortical volume by that scan's estimated total intracranial volume (`EstimatedTotalIntraCranialVol`) before exporting the CSV.
+Imaging data is processed by Freesurfer. Features comprise 68 Desikan-Killiany cortical thickness measurements (34 per hemisphere) and 28 Aseg subcortical volumes. Subcortical volumes are normalized/divided by that scan's estimated total intracranial volume (`EstimatedTotalIntraCranialVol`).
 
 | Task | Required metadata | Row represents |
 | --- | --- | --- |
