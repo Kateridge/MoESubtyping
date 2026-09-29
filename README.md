@@ -106,7 +106,7 @@ Defaults apply to both real-data tasks unless a task-specific value is noted.
 | `--batch-size` | Samples per training batch; `0` uses the full training set. Default: **64**. |
 | `--hidden-dim` | Hidden-layer width in the router and expert networks. Default: **128**. |
 | `--expert-dropout` | Dropout probability in each expert. Default: **0.5** |
-| `--router-dropout` | Dropout probability in the router. Default: **0.2** for classification; **0** for survival. |
+| `--router-dropout` | Dropout probability in the router. Default: **0.2**. |
 | `--temperature` | Gumbel-softmax temperature used for hard routing during training. Default: **1.0**. |
 | `--initializer` | Initial clustering method for guidance: `kmeans` or `gmm`. Default: **`kmeans`**. |
 | `--guidance-epochs` | Number of epochs over which guidance decays to zero; `0` disables guidance. Default: **20**. |
