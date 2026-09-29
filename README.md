@@ -124,3 +124,27 @@ python train.py --task classification --data data/real_data_cls.csv --output run
 ```
 
 For externally generated guidance (e.g. DecoNet simulation assignments), pass `--pseudo-labels path/to/labels.csv`. Use `subject_id,pseudo_subtype` for real-data tasks, or `id,pseudo_subtype` for simulation, with integer subtype labels from `0` to `K-1`. Every guidance sample must be present and all K labels must be represented. Labels are aligned by ID; this option overrides `--initializer`.
+
+## Citation
+
+If you use this method or code in your research, please cite our paper:
+
+Zhang, Y., Li, H., and Fan, Y. **Discovering Heterogeneous Neurodegenerative Disease Patterns From MRI Data for Improved Prediction.** In *Medical Image Computing and Computer Assisted Intervention – MICCAI 2026*, Lecture Notes in Computer Science, vol. 16894, pp. 160–170. Springer, Cham, 2027. [DOI: 10.1007/978-3-032-38239-9_16](https://doi.org/10.1007/978-3-032-38239-9_16).
+
+```bibtex
+@inproceedings{zhang2027discovering,
+  author    = {Zhang, Yuanwang and Li, Hongming and Fan, Yong},
+  title     = {Discovering Heterogeneous Neurodegenerative Disease Patterns From {MRI} Data for Improved Prediction},
+  booktitle = {Medical Image Computing and Computer Assisted Intervention -- {MICCAI} 2026},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {16894},
+  pages     = {160--170},
+  year      = {2027},
+  publisher = {Springer},
+  address   = {Cham},
+  doi       = {10.1007/978-3-032-38239-9_16},
+  url       = {https://doi.org/10.1007/978-3-032-38239-9_16}
+}
+```
+
+The citation year follows [Springer's official citation](https://link.springer.com/chapter/10.1007/978-3-032-38239-9_16#citeas) for the MICCAI 2026 proceedings.
